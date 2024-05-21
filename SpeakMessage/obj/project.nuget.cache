@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "FVNLbI7R5Td2Uzo3inNlsjjXm3EP6oOpwLwZlcxADxCTx2gDq2+3IaLDet+HvmiZOJ8G59nZZrSNpW8r0475Vg==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\KaMu\\Desktop\\C#Test\\SpeakMessage\\SpeakMessage\\SpeakMessage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KaMu\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\google.apis.sheets.v4\\1.68.0.3407\\google.apis.sheets.v4.1.68.0.3407.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\KaMu\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
