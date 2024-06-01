@@ -8,14 +8,30 @@ namespace SpeakMessage
 {
     public class Program
     {
-        static string apiKey = "";
+        //static string apiKey = "";
+        static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
+        static readonly string CredentialsFilePath = "..\\..\\..\\client_secret.json";
         static string spreadsheetId = "1FKo3E8T39vlhOmPzGJIMhWcjlHj3lpPyF2zeJzp-0BM";
         static string range = "工作表1!A:B"; // 調整範圍以符合你的需求
         static async Task Main(string[] args)
         {
+            UserCredential credential;
+            /* using (var stream = new FileStream(CredentialsFilePath, FileMode.Open, FileAccess.Read))
+             {
+                 credential = GoogleCredential.FromStream(stream)
+                     .CreateScoped(Scopes);
+             }*/
+            var clientSecrets = await GoogleClientSecrets.FromFileAsync(CredentialsFilePath);
+            credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                clientSecrets.Secrets,
+                new[] { SheetsService.ScopeConstants.Spreadsheets},
+                "123456",
+                CancellationToken.None);
+
+
             var service = new SheetsService(new BaseClientService.Initializer()
             {
-                ApiKey = apiKey,
+                HttpClientInitializer = credential,
                 ApplicationName = "Google Sheets API .NET Quickstart",
             });
 
